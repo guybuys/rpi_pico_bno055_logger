@@ -8,7 +8,9 @@ from scheduler import Scheduler, Task
 
 i2c = machine.SoftI2C(scl=machine.Pin(9), sda=machine.Pin(8), freq=100000, timeout=1000000)
 onboard_led = machine.Pin(25, machine.Pin.OUT)
-rgb_led_pin = machine.Pin(17, machine.Pin.OUT)
+rgb_led_pin = machine.Pin(18, machine.Pin.OUT)
+virt_gnd = machine.Pin(17, machine.Pin.OUT)
+virt_gnd.value(False)
 button = machine.Pin(16, machine.Pin.IN, machine.Pin.PULL_UP)
 rgb_led = neopixel.NeoPixel(machine.Pin(rgb_led_pin), 1)
 
