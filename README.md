@@ -22,11 +22,17 @@ The **scheduler** file is shared on the **Software Engineering Wiki** repository
 If you want the code to run on your **pico** when powered on, rename the file ```tsm_bno055_example.py``` to ```main.py``` when saving it to the **pico**.
 The file ```bno_i2c_scanner.py``` is only intended to find the address on the i2c but the ```tsm_bno055_example.py``` program also checks the available addresses on the i2c bus. 
 
-## Inertial Measurement Units
+## Inertial Measurement Unit
 
-Using Inertial Measurement Units is a bit challenging. There are a bunch of very useful videos of *Paul McWhorter* that are interesting to watch in order to understand it. You should at least watch the video below to see how you should calibrate the accelerometer:
+Using an Inertial Measurement Unit is a bit challenging. There are a bunch of very useful videos of *Paul McWhorter* that are interesting to watch in order to understand it. I found the video below very interesting to see how the calibration of the accelerometer is done:
 [9-Axis IMU LESSON 5: Calibrating the BNO055 9-axis Inertial Measurement Sensor](https://www.youtube.com/watch?v=yPfQK75dZbU)
 
 The complete tutorial consists of a list of interesting videos. You can skip the parts about **Arduino** code and iced coffee without sugar. Just focus on the understanding of the IMU.
 
 [9 Axis Inertial Measurement Units With Arduino Tutorial](https://www.youtube.com/watch?v=2AO\_Gmh5K3Q\&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9)
+
+In case you prefer to read, this link is a written introduction with clear drawings and animations:
+[Inertial Measurement Unit introduction](https://www.advancednavigation.com/tech-articles/inertial-measurement-unit-imu-an-introduction/)
+
+Still not found what you are looking for? Search for **how does an imu work** in your favorite search engine. Typical, the explanation is a bit basic but you got to start somewhere ...
+
