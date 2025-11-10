@@ -1,4 +1,4 @@
-# Raspberry Pi Pico with BNO055 in Python
+# Raspberry Pi Pico with the Adafruit BNO055 module in MicroPython
 
 This project logs **IMU** data from a **BNO055** on a **Rpi Pico**.
 
@@ -20,7 +20,8 @@ The **scheduler** file is shared on the **Software Engineering Wiki** repository
 [scheduler](https://github.com/guybuys/SoftwareEngineeringWiki/blob/main/scheduler.py)
 
 If you want the code to run on your **pico** when powered on, rename the file ```tsm_bno055_example.py``` to ```main.py``` when saving it to the **pico**.
-The file ```bno_i2c_scanner.py``` is only intended to find the address on the i2c but the ```tsm_bno055_example.py``` program also checks the available addresses on the i2c bus. 
+
+The file ```bno_i2c_scanner.py``` was only intended to find the address on the i2c. I started from the example on the **micropython-bno055** repository but it didn't work. With the scanner file, I could see that the I2C address was found but the communication didn't work, probably due to the I2C clock stretching of the BNO055. When I swiched and used the SoftI2C class instead of the I2C class, it did work. I did not change the pull-up resistors of the **adafruit BNO055** module. The ```tsm_bno055_example.py``` program also checks the available addresses on the i2c bus so the ```bno_i2c_scanner.py``` is not needed. 
 
 ## Inertial Measurement Unit
 
