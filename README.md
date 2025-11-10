@@ -42,24 +42,40 @@ Still not found what you are looking for? Search for **how does an imu work** in
 When the BNO055 boots and is not calibrated, the data that the program is printing looks like this:
 
 Calibration required: sys 0 gyro 3 accel 0 mag 0
+
 Temperature 22°C
+
 Mag       x     7    y   -18     z   -49
+
 Gyro      x     0    y    -0     z     0
+
 Accel     x   0.3    y   0.0     z   9.5
+
 Lin acc.  x   0.0    y   0.0     z  -0.3
+
 Gravity   x   0.3    y   0.0     z   9.8
+
 Quatern.  w 1.000    x 0.000     y -0.016     z 0.000
+
 Heading        0 roll    2 pitch    0
+
 
 After calibration, the data that the program is printing looks like this:
 
 Temperature 22°C
+
 Mag       x     3    y    15     z   -43
+
 Gyro      x     0    y     0     z     0
+
 Accel     x   0.4    y   0.3     z   9.7
+
 Lin acc.  x   0.0    y   0.0     z  -0.0
+
 Gravity   x   0.4    y   0.2     z   9.8
+
 Quatern.  w 0.991    x 0.015     y -0.016     z 0.134
+
 Heading      345 roll    2 pitch   -1
 
 
